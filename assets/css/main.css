@@ -27,14 +27,13 @@ Table of Content
 /* -----------------------------------
 		 Global
 ----------------------------------- */
-
 * {
-    margin: 0;
-    padding: 0;
-    font-family: inherit;
-    outline: none !important;
-    list-style: none !important;
-    text-decoration: none !important;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  outline: none !important;
+  list-style: none !important;
+  text-decoration: none !important;
 }
 
 *:after,
@@ -106,6 +105,10 @@ a:hover, a:focus {
 
 .bg-base-color {
   background-color: #f21e4e !important;
+}
+
+.bg-white-color {
+  background-color: #fff !important;
 }
 
 .font-w-600 {
