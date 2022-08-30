@@ -114,7 +114,7 @@ a:focus {
 }
 
 .bg-white-color {
-  background-color: #fff !important;
+  background-color: white;
 }
 
 .font-w-600 {
@@ -291,6 +291,24 @@ ul {
   margin-bottom: 30px;
 }
 
+/* ---------- Code ---------  */
+
+code,
+pre,
+language-cpp {
+  background-color: #f5f2f0;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 3px;
+}
+code,
+pre,
+language-cpp {
+  margin: 5;
+  padding: 0;
+  border: 0;
+  font-size: 90%;
+}
 /* ---------- Buttons ---------  */
 .btn-custom {
   cursor: pointer;
@@ -350,6 +368,68 @@ ul {
 
 .btn-custom:hover,
 .btn-custom:focus {
+  color: #ffffff;
+  outline: none;
+}
+
+.btn-custom2 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  position: relative;
+  background-color: #ee8c00;
+  line-height: 20px;
+  border: 0;
+  color: #ffffff !important;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 24px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-custom2 i {
+  margin-right: 8px;
+}
+
+.btn-custom2 .arrow_right {
+  margin-top: 6px;
+  margin-left: 5px;
+}
+
+.btn-custom2::after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #343a40;
+  z-index: -1;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-custom2:hover::after,
+.btn-custom2:focus::after {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.btn-custom2:hover,
+.btn-custom2:focus {
   color: #ffffff;
   outline: none;
 }
@@ -720,14 +800,9 @@ ul {
   left: 0;
   right: 0;
   text-align: center;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   margin: auto;
-  -webkit-box-shadow: 0 4px 6px -1px rgba(242, 30, 78, 0.1),
-    0 2px 4px -1px rgba(242, 30, 78, 0.06);
-  box-shadow: 0 4px 6px -1px rgba(242, 30, 78, 0.1),
-    0 2px 4px -1px rgba(242, 30, 78, 0.06);
 }
 
 .logo a {
@@ -804,6 +879,10 @@ ul {
 .text-white {
   color: #ffffff;
 }
+.nave-logo .a {
+  visibility: hidden;
+}
+
 .nav-link {
   float: right;
   height: 100%;

@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ahmed Aboalia">
+    <meta name="description" content="How to Restart SAP Business One Service On SUSE Linux Server">
+    <meta name="keywords" content="Ahmed Aboalia">
+
+    <!-- Title -->
+    <title> How to Restart SAP Business One Service On SUSE Linux Server</title>
+    <link rel="icon" href="../images/site/icon.png">
+
+
+    <!-- CSS Plugins -->
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/elegant-font-icons.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery.animatedheadline.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/owl.carousel.css">
+
+
+    <!-- Font Google -->
+    <script src="https://kit.fontawesome.com/f20bfe94f5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- main CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body data-spy="scroll" data-target="#scrollspy" data-offset="1">
+
+    <!--menu toggle-->
+    <div class="menu-toggle" id="menuToggle">
+        <span></span>
+    </div>
+
+    <!--header-left-->
+    <div class="header-left" id="scrollspy">
+        <!--logo-->
+        <div class="logo bg-white-color">
+            <img href="../index.html" style="width:100%; height:auto; max-width:300px;" alt="personal-logo" class="mb-0"
+                src="../images/site/icon.png" loading="lazy">
+        </div>
+
+        <!--menu-->
+        <div class="main-menu" id="js-menu">
+            <div class="cross bg-base-color">
+                <span><i class="fas fa-times text-white"></i></span>
+            </div>
+            <nav class="menu">
+                <ul class="menu-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html#about">About </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html#services">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html#works">Works</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html#blog">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--btn-share-->
+        <div class="btn-share">
+            <span class="social_share fa-solid fa-share-nodes text-dark"></span>
+        </div>
+
+    </div>
+
+
+
+    <!--main-->
+    <div class="main">
+        <!-- Blog -->
+        <section class="section blog blog-single" id="blog">
+            <div class="container-fluid">
+                <div class="row">
+                    <!--item-->
+                    <div class="col-lg-12 col-md-12">
+                        <div class="blog-single-inner">
+                            <div class="image">
+                                <img src="../images/blog/single/2/1.png" alt="">
+                            </div>
+                            <div class="content">
+                                <small class="text-muted">January 14, 2022 <span class="dot"></span> #SUSE Linux, #SAP
+                                    Business One, #Services
+                                    <span class="dot"></span> Less than a 1 minute read</small>
+                                <h3 class="title  mb-15 mt-10">How to Restart SAP Business One Service On SUSE Linux
+                                    Server</h3>
+                                <p>Follow there steps about how to restart <b>SAP HANA</b> related services in SuSE
+                                    Linux Enterprise Operating System.</p>
+
+                                <p> 1- Hold any transaction from all users, logout all user.</p>
+                                <p> 2- Open <b>puTTy</b>, and logon to your <b>SAP HANA</b> System using
+                                    user
+                                    <b>root</b>, then change user to <b>&lt;SID&gt;adm.</b>.
+                                </p>
+                                <p> 3- Change directory to HANA installation directory
+                                    <b>&lt;HANADIR&gt;/&lt;SID&gt;/HDB00</b>.
+                                </p>
+
+                                <p> 4- Type command below to stop HANA Database Engine Service and hit enter.</p>
+                                <div class="image">
+                                    <img src="../images/blog/single/1/4.png" alt="">
+                                </div>
+                                <p>&nbsp;</p>
+                                <p> 5- Wait until service stopped, then type command below to start HANA Database
+                                    Engine Service</p>
+                                <div class="image">
+                                    <img src="../images/blog/single/1/5.png" alt="">
+                                </div>
+
+                                <p>&nbsp;</p>
+                                <p> 6- Wait until service fully started.</p>
+                                <div class="image">
+                                    <img src="../images/blog/single/1/6.png" alt="">
+                                </div>
+                                <p>&nbsp;</p>
+
+                                <p> 7- Return to user root by typing exit.</p>
+                                <p> 8- Type command <span style="color: burlywood;"><strong>/etc/init.d/sapb1servertools
+                                            restart</strong></span> to restart SLD service, Analytics Platform, etc.</p>
+                                <div class="image">
+                                    <img src="../images/blog/single/1/8.png" alt="">
+                                </div>
+                                <p>&nbsp;</p>
+                                <p> 9- Wait until service fully restarted.</p>
+                                <div class="image">
+                                    <img src="../images/blog/single/1/9.png" alt="">
+                                </div>
+                                <p>&nbsp;</p>
+                                <p> 10- Type command <span style="color: burlywood;"><strong>/etc/init.d/b1s
+                                            restart</strong></span> to restart service layer services.</p>
+                                <div class="image">
+                                    <img src="../images/blog/single/1/10.png" alt="">
+                                </div>
+                                <p>&nbsp;</p>
+                                <p>After you’ve done, please re-logon to your <b>SAP Business One</b>, and hopefully
+                                    your
+                                    error services problem was solved 🙂</p>
+                                <div class="bottom">
+                                    <div class="tags">
+                                        <ul class="list-inline">
+                                            <li>
+                                                <a href="#">SUSE Linux</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">SAP Business One</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Services</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="social-media">
+                                        <ul class="list-inline">
+                                            <li><a href="https://www.facebook.com/EngAbo3lia"><i
+                                                        class="fab fa-facebook-f " title="Facebook"></i></a></li>
+                                            <li><a href="https://twitter.com/EngAbo3lia"><i class="fab fa-twitter "
+                                                        title="Twitter"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/in/EngAbo3lia"><i
+                                                        class="fab fa-linkedin " title="LinkedIn"></i></a></li>
+                                            <li><a href="https://github.com/EngAbo3lia"><i class="fab fa-github "
+                                                        title="Github"></i></a></li>
+                                            <li><a href="https://www.youtube.com/channel/UCSBLSpUQBpqmNGtQzaw1P3A"><i
+                                                        class="fab fa-youtube " title="Youtube"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--Footer-->
+        <footer class="pt-30 pb-30 bg-light">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="text-center mb-0">© 2022 Ahmed Aboalia, Are Right All Resereved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--social-media-->
+        <div class="social-footer">
+            <ul class="list-inline">
+                <li><a href="https://www.facebook.com/EngAbo3lia"><i class="fab fa-facebook-f "
+                            title="Facebook"></i></a></li>
+                <li><a href="https://twitter.com/EngAbo3lia"><i class="fab fa-twitter " title="Twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/EngAbo3lia"><i class="fab fa-linkedin "
+                            title="LinkedIn"></i></a></li>
+                <li><a href="https://github.com/EngAbo3lia"><i class="fab fa-github " title="Github"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCSBLSpUQBpqmNGtQzaw1P3A"><i class="fab fa-youtube "
+                            title="Youtube"></i></a></li>
+                <!--<li><a href="https://www.behance.net/ahmedaboal93fd"><i class="fab fa-behance "></i></a></li>-->
+            </ul>
+        </div>
+    </div>
+    <!--Main End-->
+
+    <!--loading -->
+    <div class="loading">
+        <div class="circle"></div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- JS Plugins  -->
+    <script src="../js/jquery.animatedheadline.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/ajax-contact.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
