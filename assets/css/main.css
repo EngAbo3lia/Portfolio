@@ -39,7 +39,7 @@ Table of Content
 *:after,
 *:before {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -56,12 +56,7 @@ body {
   overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Muli", sans-serif;
   font-weight: 800;
   line-height: 1.618;
@@ -99,8 +94,7 @@ a {
   transition: all 0.5s ease;
 }
 
-a:hover,
-a:focus {
+a:hover, a:focus {
   color: #f21e4e;
   text-decoration: none;
 }
@@ -110,11 +104,11 @@ a:focus {
 }
 
 .bg-base-color {
-  background-color: #ee8c00 !important;
+  background-color: #f21e4e !important;
 }
 
 .bg-white-color {
-  background-color: white;
+  background-color: #fff !important;
 }
 
 .font-w-600 {
@@ -227,7 +221,7 @@ ul {
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
   -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
-  box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+          box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
 }
 
 .social-footer a i {
@@ -237,7 +231,7 @@ ul {
 }
 
 .social-footer a i:hover {
-  color: #ee8c00 !important;
+  color: #f21e4e !important;
 }
 
 .pagination {
@@ -266,8 +260,7 @@ ul {
   transition: all 0.5s ease-in-out;
 }
 
-.pagination ul li a.active,
-.pagination ul li a:hover {
+.pagination ul li a.active, .pagination ul li a:hover {
   background-color: #f21e4e;
   color: #ffffff;
   border: 1px solid #f21e4e !important;
@@ -291,24 +284,6 @@ ul {
   margin-bottom: 30px;
 }
 
-/* ---------- Code ---------  */
-
-code,
-pre,
-language-cpp {
-  background-color: #f5f2f0;
-  border-radius: 3px;
-  font-family: courier, monospace;
-  padding: 0 3px;
-}
-code,
-pre,
-language-cpp {
-  margin: 5;
-  padding: 0;
-  border: 0;
-  font-size: 90%;
-}
 /* ---------- Buttons ---------  */
 .btn-custom {
   cursor: pointer;
@@ -352,84 +327,20 @@ language-cpp {
   background-color: #343a40;
   z-index: -1;
   -webkit-transform-origin: center;
-  transform-origin: center;
+          transform-origin: center;
   -webkit-transform: scale(0);
-  transform: scale(0);
+          transform: scale(0);
   border-radius: 5px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.btn-custom:hover::after,
-.btn-custom:focus::after {
+.btn-custom:hover::after, .btn-custom:focus::after {
   -webkit-transform: scale(1);
-  transform: scale(1);
+          transform: scale(1);
 }
 
-.btn-custom:hover,
-.btn-custom:focus {
-  color: #ffffff;
-  outline: none;
-}
-
-.btn-custom2 {
-  cursor: pointer;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  position: relative;
-  background-color: #ee8c00;
-  line-height: 20px;
-  border: 0;
-  color: #ffffff !important;
-  font-size: 16px;
-  font-weight: 500;
-  padding: 10px 24px;
-  text-transform: capitalize;
-  border-radius: 5px;
-  z-index: 1;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.btn-custom2 i {
-  margin-right: 8px;
-}
-
-.btn-custom2 .arrow_right {
-  margin-top: 6px;
-  margin-left: 5px;
-}
-
-.btn-custom2::after {
-  position: absolute;
-  content: "";
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: #343a40;
-  z-index: -1;
-  -webkit-transform-origin: center;
-  transform-origin: center;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  border-radius: 5px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.btn-custom2:hover::after,
-.btn-custom2:focus::after {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-.btn-custom2:hover,
-.btn-custom2:focus {
+.btn-custom:hover, .btn-custom:focus {
   color: #ffffff;
   outline: none;
 }
@@ -790,7 +701,7 @@ language-cpp {
 
 .header-left.open {
   -webkit-transform: translateX(0px);
-  transform: translateX(0px);
+          transform: translateX(0px);
   width: 100%;
 }
 
@@ -800,9 +711,12 @@ language-cpp {
   left: 0;
   right: 0;
   text-align: center;
-  width: 60px;
-  height: 60px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   margin: auto;
+  -webkit-box-shadow: 0 4px 6px -1px rgba(242, 30, 78, 0.1), 0 2px 4px -1px rgba(242, 30, 78, 0.06);
+          box-shadow: 0 4px 6px -1px rgba(242, 30, 78, 0.1), 0 2px 4px -1px rgba(242, 30, 78, 0.06);
 }
 
 .logo a {
@@ -833,9 +747,9 @@ language-cpp {
 .main-menu {
   position: fixed;
   -webkit-transform-origin: left top;
-  transform-origin: left top;
+          transform-origin: left top;
   -webkit-transform: rotate(-90deg) translateX(-100%);
-  transform: rotate(-90deg) translateX(-100%);
+          transform: rotate(-90deg) translateX(-100%);
   width: 100vh;
   height: 100px;
 }
@@ -873,16 +787,12 @@ language-cpp {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
+      flex-direction: row-reverse;
 }
 
 .text-white {
   color: #ffffff;
 }
-.nave-logo .a {
-  visibility: hidden;
-}
-
 .nav-link {
   float: right;
   height: 100%;
@@ -898,16 +808,13 @@ language-cpp {
   transition: all 0.5s ease;
 }
 
-.nav-link.active,
-.nav-link:focus,
-.nav-link:hover {
+.nav-link.active, .nav-link:focus, .nav-link:hover {
   color: #f21e4e !important;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.nav-link:hover:after,
-.nav-link.active:after {
+.nav-link:hover:after, .nav-link.active:after {
   position: absolute;
   content: "";
   left: 0px;
@@ -946,8 +853,7 @@ language-cpp {
   border-radius: 50%;
 }
 
-.menu-toggle span:after,
-.menu-toggle span:before {
+.menu-toggle span:after, .menu-toggle span:before {
   height: 5px;
   width: 5px;
   background-color: #ffffff;
@@ -992,7 +898,7 @@ language-cpp {
 }
 
 .home .social-home i:hover {
-  color: #ee8c00;
+  color: #f21e4e;
 }
 
 .home .banner h6 {
@@ -1097,7 +1003,7 @@ language-cpp {
   background-color: #ffffff;
   border-radius: 5px;
   -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
-  box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+          box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
 }
 
 .about .timeline .item {
@@ -1157,10 +1063,10 @@ language-cpp {
 
 .services .item:hover {
   -webkit-transform: translateY(-10px);
-  transform: translateY(-10px);
+          transform: translateY(-10px);
   background-color: #ffffff;
   -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
-  box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+          box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
 }
 
 .services .item:hover .circle {
@@ -1193,7 +1099,7 @@ language-cpp {
   background-color: #ffffff;
   border-radius: 5px;
   -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
-  box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+          box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
 }
 
 .works .item .image {
@@ -1218,11 +1124,11 @@ language-cpp {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
@@ -1236,7 +1142,7 @@ language-cpp {
 
 .works .item .image:hover img {
   -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .works .item .image:hover .overly {
@@ -1280,8 +1186,8 @@ language-cpp {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 15px;
 }
 
@@ -1422,7 +1328,7 @@ language-cpp {
 
 .blog .item:hover {
   -webkit-transform: translateY(-10px);
-  transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .blog .item .content {
@@ -1432,7 +1338,7 @@ language-cpp {
   background-color: #ffffff;
   border-radius: 5px;
   -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
-  box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+          box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
 }
 
 .blog .item .content small {
@@ -1487,7 +1393,7 @@ language-cpp {
   background-color: #ffffff;
   border-radius: 5px;
   -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
-  box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+          box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
 }
 
 .blog-single .content small .dot {
@@ -1538,11 +1444,11 @@ language-cpp {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .blog-single .quote small:after {
@@ -1550,7 +1456,7 @@ language-cpp {
 }
 
 .blog-single .quote .dot {
-  margin: 2px 6px 2px 0px !important;
+  margin: 2px 6px 2px 0px  !important;
 }
 
 .blog-single .image img {
@@ -1570,8 +1476,8 @@ language-cpp {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .blog-single .bottom .tags ul li {
@@ -1649,7 +1555,7 @@ language-cpp {
 
 .contact .contact-info .item .fa-phone {
   -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .contact .contact-info .item i {
@@ -1686,7 +1592,7 @@ language-cpp {
 .form .form-control:focus {
   border-bottom: 1px solid #f21e4e !important;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
 }
 
 .form .form-control ::-moz-placeholder {
@@ -1708,11 +1614,11 @@ language-cpp {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .loading .circle {
@@ -1720,38 +1626,38 @@ language-cpp {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #ee8c00;
+  background-color: #f21e4e;
   -webkit-animation: load 0.9s infinite linear;
-  animation: load 0.9s infinite linear;
+          animation: load 0.9s infinite linear;
 }
 
 @-webkit-keyframes load {
   0% {
     -webkit-transform: scale(0.5);
-    transform: scale(0.5);
+            transform: scale(0.5);
   }
   50% {
     -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+            transform: scale(1.2);
   }
   100% {
     -webkit-transform: scale(0);
-    transform: scale(0);
+            transform: scale(0);
   }
 }
 
 @keyframes load {
   0% {
     -webkit-transform: scale(0.5);
-    transform: scale(0.5);
+            transform: scale(0.5);
   }
   50% {
     -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+            transform: scale(1.2);
   }
   100% {
     -webkit-transform: scale(0);
-    transform: scale(0);
+            transform: scale(0);
   }
 }
 
@@ -1768,7 +1674,7 @@ language-cpp {
 @media screen and (max-width: 768px) {
   .header-left {
     -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
+            transform: translateX(-100px);
   }
   .header-left .logo,
   .header-left .btn-share {
@@ -1778,11 +1684,11 @@ language-cpp {
     height: 100%;
     width: 100%;
     -webkit-transform: rotate(0deg) translateX(0%);
-    transform: rotate(0deg) translateX(0%);
+            transform: rotate(0deg) translateX(0%);
     background-color: #ffffff;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1793,22 +1699,21 @@ language-cpp {
   .header-left .main-menu .menu-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 100%;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header-left .main-menu .menu-nav .nav-link {
     padding: 15px 0;
     line-height: 1.5;
   }
-  .header-left .main-menu .menu-nav .nav-link.active:after,
-  .header-left .main-menu .menu-nav .nav-link:hover:after {
+  .header-left .main-menu .menu-nav .nav-link.active:after, .header-left .main-menu .menu-nav .nav-link:hover:after {
     bottom: 0;
   }
   .social-footer {
@@ -1858,14 +1763,14 @@ language-cpp {
   .testimonials .item .content .data {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .testimonials .item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .testimonials .item .image {
     margin-top: 6px;
@@ -1887,12 +1792,12 @@ language-cpp {
   }
   .work-single .details .g-listes {
     -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .work-single .details .g-listes .liste:last-child {
     margin-left: 0;
@@ -1922,12 +1827,7 @@ language-cpp {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.dark h1,
-.dark h2,
-.dark h3,
-.dark h4,
-.dark h5,
-.dark h6,
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6,
 .dark .about .details .info li span,
 .dark .blog-single .quote p,
 .dark .contact .contact-info .item p:first-child,
@@ -1962,7 +1862,7 @@ language-cpp {
 .dark .about .timeline {
   background-color: #16161d;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
 }
 
 .dark .header-left,
