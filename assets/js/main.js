@@ -13,7 +13,20 @@ Table of Content
     . Testimonials
     . All Functions
 
- 
+ <script>
+    function calculateAge(birthYear) {
+        const currentYear = new Date().getFullYear();
+        return currentYear - birthYear;
+    }
+
+    // Assuming birth year is 1993 (adjust as needed)
+    const birthYear = 1993;
+    const age = calculateAge(birthYear);
+
+    // Update the HTML element with the calculated age
+    document.getElementById('age').textContent = age;
+</script>
+
 ----------------------------------- */
 $(window).resize(function () {
     if ($(window).width() < 769) {
